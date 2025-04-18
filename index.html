@@ -1,42 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Findwise – Smarter Job Search</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Findwise - Smarter Job Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Find Better Jobs. Faster.</h1>
-      <p class="subheadline">
-        AI-powered job search for New Zealand and Australia. Smarter matching, better results.
-      </p>
-    </header>
+<body class="landing">
 
-    <section class="benefits">
-      <ul>
-        <li><strong>Advanced Search:</strong> Filter jobs your way — not just by keywords.</li>
-        <li><strong>Smart Matching:</strong> Personalized roles that fit your skills and lifestyle.</li>
-        <li><strong>Real-Time Listings:</strong> Stay ahead with instant job updates.</li>
+  <!-- Header -->
+  <header id="header" class="alt">
+    <h1>Findwise</h1>
+    <a href="#nav">Menu</a>
+  </header>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner">
+    <i class="icon fa-search"></i>
+    <h2>Smarter Job Search. Simpler Hiring.</h2>
+    <p>Findwise helps job seekers and employers connect faster with AI-enhanced search and clean design.</p>
+    <ul class="actions">
+      <li><a href="#four" class="button big special">Join the Waitlist</a></li>
+    </ul>
+  </section>
+
+  <!-- Features -->
+  <section id="one" class="wrapper style1">
+    <div class="inner">
+      <article class="feature left">
+        <span class="image"><img src="images/employees.jpg" alt="Job seekers" /></span>
+        <div class="content">
+          <h2>For Job Seekers</h2>
+          <p>No clutter, no spam jobs. Just smart, AI-powered tools to find what fits you best — fast.</p>
+        </div>
+      </article>
+      <article class="feature right">
+        <span class="image"><img src="images/employers.jpg" alt="Employers hiring" /></span>
+        <div class="content">
+          <h2>For Employers</h2>
+          <p>Get your job posts in front of the right people. Better filters, instant AI ranking, and a simpler posting flow.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section id="two" class="wrapper special">
+    <div class="inner">
+      <header class="major narrow">
+        <h2>What Makes Findwise Different?</h2>
+        <p>We're building a better experience for both sides of the hiring table.</p>
+      </header>
+	  <div class="image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+        <div style="text-align: center; max-width: 300px;">
+          <span class="image"><img src="images/workhard.jpg" alt="Clean design" style="max-width: 100%; height: auto;" /></span>
+          <p><strong>Modern, Clean Design</strong><br>Enjoy a beautiful interface that's easy to use, for both job seekers and employers.</p>
+        </div>
+        <div style="text-align: center; max-width: 300px;">
+          <span class="image"><img src="images/ai_brain.jpg" alt="AI search" style="max-width: 100%; height: auto;" /></span>
+          <p><strong>AI-Powered Search</strong><br>Find better matches faster with advanced AI matching and filtering.</p>
+        </div>
+        <div style="text-align: center; max-width: 300px;">
+          <span class="image"><img src="images/office.jpg" alt="Better results" style="max-width: 100%; height: auto;" /></span>
+          <p><strong>Faster Results</strong><br>Get to the right candidates or the right job without the usual hassle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section id="three" class="wrapper style3 special">
+    <div class="inner">
+      <header class="major narrow">
+        <h2>Join the Findwise Beta</h2>
+        <p>We’re launching soon in New Zealand and Australia. Be first to try it.</p>
+      </header>
+      <ul class="actions">
+        <li><a href="#four" class="button big alt">Sign Up Now</a></li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="cta">
-      <h2>Get Early Access</h2>
-      <p>Join the waiting list and be first to try Findwise.</p>
+  <!-- Contact Form -->
+  <section id="four" class="wrapper style2 special">
+    <div class="inner">
+      <header class="major narrow">
+        <h2>Stay in the loop</h2>
+        <p>Leave your email and we’ll notify you once Findwise goes live.</p>
+      </header>
       <form action="https://formspree.io/f/xeoawpal" method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <input type="text" name="_gotcha" style="display:none"> <!-- Honeypot -->
-        <button type="submit">Join Now</button>
+        <input type="text" name="_gotcha" style="display:none">
+        <div class="container 75%">
+          <div class="row uniform 50%">
+            <div class="6u 12u$(xsmall)">
+              <input name="name" placeholder="Name" type="text">
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+              <input name="email" placeholder="Email" type="email" required>
+            </div>
+            <div class="12u$">
+              <textarea name="message" placeholder="Optional message (e.g., what are you looking for?)" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" class="special" value="Submit"></li>
+          <li><input type="reset" class="alt" value="Reset"></li>
+        </ul>
       </form>
-      <small>No spam. Just updates and early invites.</small>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <p>© Findwise 2025 | Built in New Zealand</p>
-    </footer>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    &copy; 2025 Findwise. Built with love.
   </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
