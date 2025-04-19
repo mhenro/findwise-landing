@@ -4231,11 +4231,13 @@
 			}
 
 		}
-		
-#header a[href="#nav"] {
-  display: none;
-}
 
 #footer .icons {
   display: none;
+}
+
+/* Bold style for active nav item */
+#nav ul.links li a.active {
+  font-weight: 700; /* Makes the active link bold */
+  color: #00bfa5;   /* Keep it white if your nav has a dark background */
 }
