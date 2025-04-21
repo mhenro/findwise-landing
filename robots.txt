@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://findwise.co.nz/sitemap.xml
